@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Container Full: 1520px */
+/* Container : 1170px */
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+.container-full {
+    width: 95%;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+}
+html {
+    font-size: 62%;
+}
+.align-items-center {
+    align-items: center;
+}
+[class*="col-"]{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+
+/* 12 coloumn grid system */
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.32%;
+}
+.col-5{
+    width: 41.65%;
+}
+.col-6{
+    width: 49.98%;
+}
+.col-7{
+    width: 58.31%;
+}
+.col-8{
+   width: 66.64%; 
+}
+.col-9{
+   width: 74.94%; 
+}
+.col-10{
+    width: 83.3%;
+}
+.col-11{
+    width: 91.63%;
+}
+.col-12{
+    width: 100%;
+}
+/*header*/
+#header {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+#header::after {
+    background: linear-gradient(to right, #ff4800 34%,#ff4800 36%,#ffba00 36%,#ffba00 71%,#ff4800 71%,#ff4800 71%,#ff4800 71%,#ffba00 71%,#ffba00 72%,#2f2e42 72%,#2f2e42 72%);
+    position: absolute;
+    content: '';
+    height: 4px;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.pages {
+    display: flex;
+}
+.pages li::marker {
+    color: #cccccc;
+    font-size: 1.8rem;
+}
+.links {
+    color: black;
+    transition: 1s;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+.links:hover {
+    color: #ff4800;
+}
+.chat {
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.4rem;
+    margin-right: 24px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+}
+.chating {
+    text-decoration: none;
+}
+.chats {
+    margin-top: 16px;
+    border-bottom: 2px solid black;
+    padding-bottom: 13px;
+    width: 130px;
+    display: flex;
+}
+.menu-icon {
+    height: 30px;
+    width: 40px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+    justify-content: space-between;   
+}
+.menu-icon-bar {
+    height: 3px;
+    background-color: black;
+}
+/* img-sec */
+.img-sec {
+    background-image: url(/images/smartworks-coworking-E7Tzh2TTS6c-unsplash.jpg);
+    background-size: cover;
+    height: 900px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+/* manange app */
+.byzano-finance {
+    margin-top: 190px;
+}
+.manage-app h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;   
+}
+.pleasure-work {
+    background-color: #f1f6fa;
+    padding: 60px;
+    border-radius: 20px;
+}
+.team-miles {
+    font-size: 2.6rem;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.mb {
+    margin-bottom: 45px;
+}
+.director {
+    display: flex;
+    align-items: center;
+}
+.director h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+.director-name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #b6b7b9;
+}
+.director a {
+    font-style: italic;
+    text-decoration: none;
+}
+.radius {
+    content: "";
+    border-radius: 100%;
+    border: 1px solid black;
+    background-color: #cccccc;
+    padding: 22px;
+    margin-right: 20px;
+    border: none;
+}
+.client {
+    margin-bottom: 60px;
+    margin-top: 125px;
+}
+.cl-se h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.cl-se p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #707070;
+    line-height: 1.4;
+}
+.team {
+    margin-bottom: 60px;
+    margin-top: 125px;
+}   
+.te-dt h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.te-dt p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.4;
+    color: #707070;
+}
+.para {
+    text-align: center;
+}
+.para p {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 180px;
+    padding-bottom: 170px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 120px;
+}
+/* inance app */
+.chlnge-progress {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #ee9a30;
+}
+.finance-system-h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 70px;
+}
+.studio-p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.Miles-studio p {
+    color: #666666;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 160px;
+}
+.studio-img {
+    width: 100%;
+    aspect-ratio: 1/1.3;
+    object-fit: cover;
+}
+/* system and strategy */
+.system-strategy {
+    padding-bottom: 190px;
+    padding-top: 225px;
+}
+.img {
+    margin-bottom: 90px;
+}
+.strategy-system {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 370px;
+    transform: rotate(-13deg);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.team-creative-p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #666666;
+    line-height: 1.6;
+}
+.system-links {
+    font-size: 1.8rem;
+    color: #9ea0a1;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'DM Sans', sans-serif;
+    padding: 8px 30px;
+    transition: 1s;
+}
+.system-links:hover {
+    background-color: #ff9933;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+/* best solution */
+.best-solution {
+    padding: 140px 0;
+    background-color: #e8eff5;
+}
+.showcase-p {
+     font-size: 1.8rem;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     color: #777879;
+     padding-right: 24px;
+}
+.showcase-img {
+    width: 100%;
+    aspect-ratio: 1 / 2.5;
+    object-fit: cover;
+    margin-top: 120px;
+    border-radius: 20px;
+}
+/* available on */
+.available {
+    padding-top: 440px;
+    padding-bottom: 90px;
+}
+.available p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #666666;
+    margin-bottom: 75px;
+    line-height: 1.7;
+    text-align: center;
+}
+.available h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 260px;
+    margin-bottom: 90px;
+    border-bottom: 1px solid #eaeaea;
+}
+.share {
+    display: flex;
+    align-items: center;
+}
+.share h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+.share-icon {
+    font-size: 1.6rem;
+    border-radius: 100%;
+    border: 1px solid #d0d0d0;
+    color: #999999;
+    margin-left: 15px;
+    transition: 1s;
+}
+.share-icon:hover {
+    background-color: #ff9933;
+    color: white;
+}
+.twitter {
+    padding: 14px;
+}
+.facebook {
+    padding: 14px 17px;
+} 
+.fa-google-plus-g {
+    padding: 14px 12px;
+}
+.fa-tumblr {
+    padding: 14px 17px;
+}
+.fa-wifi {
+    padding: 13px 11px;
+    transform: rotate(45deg);
+}
+.share-liked {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liked {
+    align-items: center;
+    display: flex;
+}
+.heart {
+    border-radius: 100%;
+    border: 1px solid black;
+    border: none;
+    padding: 13px;
+    background-color: #ebeff0;
+    color: #ff3600;
+    margin-right: 15px;
+}
+.like-p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    color: #7a7a7a;
+}
+/* footer */
+.footer {
+    background-color: #f2f5fa;
+    padding-top: 150px;
+    padding-bottom: 130px;
+}
+.footer h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 100px;
+}
+.footer h3 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+h3 a {
+    color: black;
+    transition: 1s;
+    text-decoration: underline;
+}
+h3 a:hover {
+    color: #ff4800;
+}
+.contact-ser {
+    margin-top: 11px;
+    margin-bottom: 90px;
+}
+.ser-con {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 50px;
+}
+.ser-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 3;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+.add-para {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 25px;
+}
+.com-para {
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 70px;
+}
+.nav {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 3;
+    transition: 1s;
+}
+.nav:hover {
+    color: #ff4800;
+}
+.all-rights {
+    margin-top: 24px;
+}
+.all-rights p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+.all-rights a {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+.icons {
+    display: flex;
+    margin-top: 24px;
+}
+.social-icon {
+    margin-right: 25px;
+    font-size: 2rem;
+}
+.icons a {
+    color: black;
+}
